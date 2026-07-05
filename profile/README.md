@@ -4,6 +4,9 @@
 [![Host OS: Fedora Linux](https://img.shields.io/badge/Host%20OS-Fedora%20Linux-blue.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#)
 
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/0da0b697-374a-4d40-9336-52d95c276a01" />
+
+
 BuildAIOS is a governed, recoverable AI operating system and cognitive control plane engineered directly above Fedora Linux. Designed to execute high-autonomy agent workflows, consolidate deep context assets, orchestrate rootless containment wrappers, and link unified inference pipelines—all under high-grade kernel containment boundaries.
 
 The core engineering paradigm represents a radical shift from standard, userspace-only agent loops: **"Borrow Infrastructure, Build Governance."** Instead of recreating core system utilities, BuildAIOS implements state-of-the-art orchestration layers that interface directly with battle-tested Linux system APIs.
