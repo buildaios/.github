@@ -1,0 +1,71 @@
+name: Feature Request
+description: Propose a new capability, integration, or system extension for BuildAIOS.
+title: "feat(<component>): <short_title>"
+labels: ["enhancement", "proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please verify your proposal aligns with the active project boundaries in `CRITICAL_PATH.md`. We actively avoid multi-agent federations, marketplaces, or speculatively complex memory graphs for the V1 release.
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Problem Statement
+      description: What system friction, bottleneck, or missing integration are you addressing?
+      placeholder: "When registering custom Environment Packs, developers must manually verify matching SELinux templates, which increases development overhead."
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the changes or addition you would like to see implemented.
+      placeholder: "Add an automated check within the packaging workflow that calls udica internally to auto-generate standard policies."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives_considered
+    attributes:
+      label: Alternatives Considered
+      description: What other ideas did you explore or reject before landing on this proposal?
+      placeholder: "We considered writing custom policy templates manually, but that doesn't adapt dynamically to differing rootless container dependencies."
+    validations:
+      required: false
+  - type: dropdown
+    id: related_components
+    attributes:
+      label: Target Component
+      description: Select the primary subsystem or module impacted by this request.
+      multiple: true
+      options:
+        - runtime-agent
+        - mcp-gateway
+        - Environment Packs
+        - Trust Tiers
+        - scheduler-integration
+        - docs
+        - aios-website
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Urgency & Priority
+      description: How critical is this to your active workflows?
+      options:
+        - "Low — nice to have when convenient"
+        - "Medium — resolves active developer friction"
+        - "High — blocks onboarding or platform functionality"
+    validations:
+      required: true
+  - type: textarea
+    id: impact_analysis
+    attributes:
+      label: Impact
+      description: Describe the technical impact of this addition. Explain potential trade-offs or security implications.
+      placeholder: "This reduces deployment verification times from 10 minutes to under 5 seconds, improving local developer velocity."
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Include any relevant diagrams, technical specifications, or citations here.

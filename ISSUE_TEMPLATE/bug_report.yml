@@ -1,0 +1,62 @@
+name: Bug Report
+description: File a technical bug report or runtime exception for BuildAIOS.
+title: "fix(<component>): <short_description>"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug. Please ensure you are running a supported system configuration (typically Fedora Linux with rootless Podman) before filing.
+  - type: textarea
+    id: environment
+    attributes:
+      label: System Environment
+      description: Provide detailed diagnostics describing your host setup.
+      placeholder: |
+        Operating System: Fedora 44 (workstation / Server)
+        Fedora Version: 44
+        Python Version: 3.14.4
+        Podman Version: 5.3.0
+        Kernel: 7.0.14-201.fc44.x86_64
+    validations:
+      required: true
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Explain step-by-step how to reproduce this bug or trigger the error.
+      placeholder: |
+        1. Run `gateway serve` on port 18789
+        2. Make a JSON-RPC request to the UNIX domain socket using curl...
+        3. Observe the core proxy lock up
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behaviour
+    attributes:
+      label: Expected Behaviour
+      description: Describe what you expected to happen under correct operation.
+      placeholder: "The gateway should validate the JSON-RPC schema and return a 400 validation error without dropping socket connection."
+    validations:
+      required: true
+  - type: textarea
+    id: actual_behaviour
+    attributes:
+      label: Actual Behaviour
+      description: Describe what actually happened, including error structures or crash states.
+      placeholder: "The process locked up on socket file descriptor acquisition, terminating with a LockAcquisitionError."
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Stack Traces & Logs
+      description: Copy and paste relevant logs, python exceptions, or systemd journalctl outputs.
+      render: shell
+      placeholder: |
+        [ERROR] 2026-07-06 12:00:00 - LockAcquisitionError: flock failed to lock directory /home/user/...
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Include any relevant details, lock issues, or specific cgroups structures involved here.

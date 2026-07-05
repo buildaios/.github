@@ -1,0 +1,46 @@
+name: Documentation Request
+description: Propose adjustments, callouts, or missing runbooks in the BuildAIOS documentation.
+title: "docs(<section>): <short_description>"
+labels: ["documentation", "good-first-issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Accurate, professional, and readable documentation is half of our software delivery. Thank you for helping us clean up our technical specifications and guides!
+  - type: textarea
+    id: section
+    attributes:
+      label: Documentation Section
+      description: Which section, document path, or landing page screen is affected?
+      placeholder: "e.g., Docs/project-state/ENVIRONMENT_LIFECYCLE.md or Website Technology section"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What is inaccurate, missing, stale, or difficult to read in the current text?
+      placeholder: "The section on transient user scopes doesn't list the exact command templates for freezing cgroups v2."
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_improvement
+    attributes:
+      label: Suggested Improvement
+      description: Describe the changes or restructuring needed.
+      placeholder: "Add concrete code execution blocks showing how the orchestrator issues control system calls, pairing it with our error definitions."
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples of Correct Wording or Code
+      description: Provide the exact wording, structural syntax, or layouts that should be utilized.
+      placeholder: "```bash\nsystemctl --user freeze app-agent.service\n```"
+    validations:
+      required: false
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: Additional Notes
+      description: Add any related tickets, coordinate issues, formatting guidelines, or layout considerations.

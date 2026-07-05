@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/buildaios/buildaios/discussions
+    about: Ask questions, present design concepts, or show off your custom Agent Environment Packs.
+  - name: BuildAIOS Documentation
+    url: https://buildaios.dev/docs
+    about: Read our technical specifications, execution engine guides, and interface descriptions.
+  - name: Private Security Disclosure
+    url: mailto:security@buildaios.dev
+    about: Report security issues, escapes, or privilege escalations privately under our SECURITY.md policy.
