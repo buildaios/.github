@@ -91,7 +91,7 @@ Our architectural thesis is simple: **Borrow Infrastructure. Build Governance.**
 | **`MCP`** | ➔ | **Gateway Governance** (Secure, unified tool & context access) |
 
 ---
-
+<!-- NOT YET MADE THE AGENT
 ## The BuildAIOS Experience
 
 <table width="100%" style="border: none; border-collapse: collapse;">
@@ -110,7 +110,7 @@ Our architectural thesis is simple: **Borrow Infrastructure. Build Governance.**
     </td>
   </tr>
 </table>
-
+-->
 ---
 
 ## Core Features
