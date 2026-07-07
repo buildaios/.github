@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/buildaios-logo.svg" alt="BuildAIOS Logo" width="140" style="margin-bottom: 16px;"/>
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/9ded9262-6107-42a3-829e-dc4ebe5a6397" />
+
 
 # BuildAIOS
 
