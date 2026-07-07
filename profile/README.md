@@ -10,8 +10,6 @@
 [![Stars](https://img.shields.io/github/stars/buildaios/runtime?style=flat-square&color=FFB000&logo=github)](https://github.com/buildaios/runtime/stargazers)
 [![Contributors](https://img.shields.io/github/contributors/buildaios/runtime?style=flat-square&color=0066CC)](https://github.com/buildaios/runtime/graphs/contributors)
 [![Fedora AI SIG](https://img.shields.io/badge/Fedora-AI_SIG-3C6EB4?style=flat-square&logo=fedora&logoColor=white)](https://fedoraproject.org/wiki/SIGs/AI)
-[![DevConf](https://img.shields.io/badge/Featured_At-DevConf-E72C29?style=flat-square)](https://devconf.info)
-[![Discord](https://img.shields.io/badge/Discord-Join_Us-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/buildaios)
 
 <p>
   <a href="#core-philosophy"><b>Philosophy</b></a> •
