@@ -7,8 +7,10 @@
 
 **Build autonomous AI systems the Linux way.**
 
-[![Stars](https://img.shields.io/github/stars/buildaios/runtime?style=flat-square&color=FFB000&logo=github)](https://github.com/buildaios/runtime/stargazers)
-[![Contributors](https://img.shields.io/github/contributors/buildaios/runtime?style=flat-square&color=0066CC)](https://github.com/buildaios/runtime/graphs/contributors)
+[![Stars-Runtime-agent](https://img.shields.io/github/stars/buildaios/Runtime-agent?style=flat-square&color=FFB000&logo=github)](https://github.com/buildaios/Runtime-agent/stargazers)
+[![Stars-MCP-gateway](https://img.shields.io/github/stars/buildaios/MCP-gateway?style=flat-square&color=FFB000&logo=github)](https://github.com/buildaios/MCP-gateway/stargazers)
+[![Contributors-Runtime-agent](https://img.shields.io/github/contributors/buildaios/Runtime-agent?style=flat-square&color=0066CC)](https://github.com/buildaios/Runtime-agent/graphs/contributors)
+[![Contributors-MCP-gateway](https://img.shields.io/github/contributors/buildaios/MCP-gateway?style=flat-square&color=0066CC)](https://github.com/buildaios/MCP-gateway/graphs/contributors)
 [![Fedora AI SIG](https://img.shields.io/badge/Fedora-AI_SIG-3C6EB4?style=flat-square&logo=fedora&logoColor=white)](https://fedoraproject.org/wiki/SIGs/AI)
 
 <p>
@@ -21,7 +23,8 @@
 
 <!-- ARCHITECTURE / HERO BANNER -->
 <a href="https://buildaios.dev">
-  <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/hero-banner.png" alt="BuildAIOS Infrastructure Banner" width="100%" style="max-width: 850px; margin: 24px 0; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"/>
+  <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/02289377-033c-4f06-bf7e-9f8a783cd35c" />
+
 </a>
 
 </div>
