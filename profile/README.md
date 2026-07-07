@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/9ded9262-6107-42a3-829e-dc4ebe5a6397" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/9ded9262-6107-42a3-829e-dc4ebe5a6397" />
 
 
 # BuildAIOS
