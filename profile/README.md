@@ -143,8 +143,22 @@ Our architectural thesis is simple: **Borrow Infrastructure. Build Governance.**
 ## System Architecture
 
 <div align="center" style="margin: 30px 0;">
-  <a href="https://buildaios.dev/docs/architecture">
-    <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/architecture-diagram.svg" alt="BuildAIOS Layered Architecture" width="100%" style="max-width: 850px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"/>
+  ┌─────────────────────────────────────────────┐
+  │ User Experience                             │
+  │ GNOME Extension • Desktop UI                │
+  ├─────────────────────────────────────────────┤
+  │ Workflow & Planning                         │
+  │ LangGraph • Agent Orchestration             │
+  ├─────────────────────────────────────────────┤
+  │ MCP Gateway                                 │
+  │ Trust • Routing • Policy • Auth             │
+  ├─────────────────────────────────────────────┤
+  │ Agent Runtime                               │
+  │ Environment Packs • Podman                  │
+  ├─────────────────────────────────────────────┤
+  │ Fedora Linux Foundation                     │
+  │ systemd • SELinux • Btrfs • cgroups         │
+  └─────────────────────────────────────────────┘
   </a>
 </div>
 
