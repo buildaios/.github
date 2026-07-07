@@ -143,22 +143,8 @@ Our architectural thesis is simple: **Borrow Infrastructure. Build Governance.**
 ## System Architecture
 
 <div align="center" style="margin: 30px 0;">
-  ┌─────────────────────────────────────────────┐
-  │ User Experience                             │
-  │ GNOME Extension • Desktop UI                │
-  ├─────────────────────────────────────────────┤
-  │ Workflow & Planning                         │
-  │ LangGraph • Agent Orchestration             │
-  ├─────────────────────────────────────────────┤
-  │ MCP Gateway                                 │
-  │ Trust • Routing • Policy • Auth             │
-  ├─────────────────────────────────────────────┤
-  │ Agent Runtime                               │
-  │ Environment Packs • Podman                  │
-  ├─────────────────────────────────────────────┤
-  │ Fedora Linux Foundation                     │
-  │ systemd • SELinux • Btrfs • cgroups         │
-  └─────────────────────────────────────────────┘
+  <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/2033bd9c-5b5c-4cd7-87ac-5c1e3b4d9a53" />
+
   </a>
 </div>
 
