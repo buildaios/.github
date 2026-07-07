@@ -148,7 +148,7 @@ Our architectural thesis is simple: **Borrow Infrastructure. Build Governance.**
   </a>
 </div>
 
-*For a detailed breakdown of the 7-layer OS routing stack, read the [Architecture Design Records](https://buildaios.dev/docs/architecture).*
+*For a detailed breakdown of the 7-layer OS routing stack, read the [Architecture Design Records](https://hackmd.io/Kn5BqYhmTtK3AuiDhi2dHA).*
 
 ---
 
@@ -172,10 +172,10 @@ BuildAIOS is modular by design. Our core systems are split into the following re
 
 | Repository | Purpose | Status |
 | :--- | :--- | :---: |
-| [**`runtime`**](https://github.com/buildaios/runtime) | Core agent execution, `systemd` process mapping, and Podman | 🟢 Active |
-| [**`gateway`**](https://github.com/buildaios/gateway) | Secure MCP proxy, rate limiting, and policy enforcement layer | 🟢 Active |
+| [**`runtime`**](https://github.com/buildaios/Runtime-agent) | Core agent execution, `systemd` process mapping, and Podman | 🟢 Active |
+| [**`gateway`**](https://github.com/buildaios/MCP-gateway) | Secure MCP proxy, rate limiting, and policy enforcement layer | 🟡 Beta |
 | [**`docs`**](https://github.com/buildaios/docs) | Architecture Decision Records (ADRs), guides, and topology | 🟢 Active |
-| [**`website`**](https://github.com/buildaios/website) | Public landing page and documentation portal front-end | 🟡 Beta |
+| [**`website`**](https://github.com/buildaios/aios-website) | Public landing page and documentation portal front-end | 🟢 Active |
 | [**`.github`**](https://github.com/buildaios/.github) | Global organization profiles, issue templates, and CI/CD | 🟢 Active |
 
 ---
@@ -187,6 +187,7 @@ BuildAIOS is modular by design. Our core systems are split into the following re
 * **Phase 3: Desktop Integration** — Lightweight local UI management dashboard, system tray monitoring, and guided agent bootstrapping.
 * **Phase 4: Distributed & Edge** — Decentralized Environment Pack marketplace and multi-node cluster orchestration.
 
+<!-- AGENTS ARE NOT MADE NOW 
 ---
 
 ## Getting Started
@@ -198,18 +199,23 @@ Ready to run governed agents on Linux?
 * [**Building Environment Packs**](https://buildaios.dev/docs/packs) — Create isolated runtime environments for specialized workloads.
 
 ---
+-->
 
 ## Contribute
 
 We are building the open standard for AI orchestration on Linux, and we welcome contributions from system architects, OS engineers, and AI developers.
-
+<!-- ISSUES ARE NOT MADE NOW 
 * **[Good First Issues](https://github.com/buildaios/runtime/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)** — Find an easy entry point into the codebase.
+-->
 * **[Discussions & RFCs](https://github.com/orgs/buildaios/discussions)** — Join active design proposals and technical debates.
+<!-- DISCORD IS NOT MADE NOW 
 * **[Discord](https://discord.gg/buildaios)** — Chat with the core maintainers.
+  -->
 
 ---
 
 <p align="center">
   <b>Built natively on Fedora Linux. Released under the MIT License.</b><br>
-  <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/fedora-logo-small.svg" alt="Fedora OS" width="24" style="margin-top: 12px;"/>
+  <img width="200" height="170" alt="image" src="https://github.com/user-attachments/assets/4bdfa014-9874-46a4-a7ad-fc5cea51c41f" />
+
 </p>
