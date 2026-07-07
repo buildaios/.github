@@ -23,6 +23,20 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/buildaios/Runtime-agent/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/buildaios/Runtime-agent?style=flat-square&label=License">
+  </a>
+
+  <a href="https://podman.io">
+    <img src="https://img.shields.io/badge/Container-Podman-892CA0?style=flat-square&logo=podman&logoColor=white">
+  </a>
+
+  <a href="https://getfedora.org">
+    <img src="https://img.shields.io/badge/Powered%20by-Fedora-51A2DA?style=flat-square&logo=fedora&logoColor=white">
+  </a>
+</p>
+
 <p>
   <a href="#core-philosophy"><b>Philosophy</b></a> •
   <a href="#why-buildaios"><b>Why BuildAIOS?</b></a> •
