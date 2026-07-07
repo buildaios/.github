@@ -42,7 +42,7 @@
   <a href="#why-buildaios"><b>Why BuildAIOS?</b></a> •
   <a href="#repositories"><b>Repositories</b></a> •
   <a href="#getting-started"><b>Quick Start</b></a> •
-  <a href="https://buildaios.dev"><b>Documentation</b></a>
+  <a href="https://hackmd.io/Kn5BqYhmTtK3AuiDhi2dHA"><b>Documentation</b></a>
 </p>
 
 <!-- ARCHITECTURE / HERO BANNER -->
