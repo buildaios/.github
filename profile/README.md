@@ -8,15 +8,15 @@
 **Build autonomous AI systems the Linux way.**
 
 
-[![Runtime Stars](https://img.shields.io/github/stars/buildaios/Runtime-agent?style=flat-square&logo=github&color=FFB000)](https://github.com/buildaios/Runtime-agent/stargazers)
-[![Gateway Stars](https://img.shields.io/github/stars/buildaios/MCP-gateway?style=flat-square&logo=github&color=FFB000)](https://github.com/buildaios/MCP-gateway/stargazers)
+[![Runtime Stars](https://img.shields.io/github/stars/buildaios/Runtime-agent?style=flat-square&logo=github&label=Runtime%20Stars&color=FFB000)](https://github.com/buildaios/Runtime-agent/stargazers)
 
-[![Runtime Contributors](https://img.shields.io/github/contributors/buildaios/Runtime-agent?style=flat-square&color=0066CC)](https://github.com/buildaios/Runtime-agent/graphs/contributors)
-[![Gateway Contributors](https://img.shields.io/github/contributors/buildaios/MCP-gateway?style=flat-square&color=0066CC)](https://github.com/buildaios/MCP-gateway/graphs/contributors)
+[![Gateway Stars](https://img.shields.io/github/stars/buildaios/MCP-gateway?style=flat-square&logo=github&label=Gateway%20Stars&color=FFB000)](https://github.com/buildaios/MCP-gateway/stargazers)
+
+[![Runtime Contributors](https://img.shields.io/github/contributors/buildaios/Runtime-agent?style=flat-square&label=Runtime%20Contributors&color=0066CC)](https://github.com/buildaios/Runtime-agent/graphs/contributors)
+
+[![Gateway Contributors](https://img.shields.io/github/contributors/buildaios/MCP-gateway?style=flat-square&label=Gateway%20Contributors&color=0066CC)](https://github.com/buildaios/MCP-gateway/graphs/contributors)
 
 [![License](https://img.shields.io/github/license/buildaios/Runtime-agent?style=flat-square)](LICENSE)
-
-[![Fedora AI SIG](https://img.shields.io/badge/Fedora-AI%20SIG-Community-294172?style=flat-square&logo=fedora&logoColor=white)](https://fedoraproject.org/wiki/SIGs/AI)
 
 [![Built with Podman](https://img.shields.io/badge/Container-Podman-892CA0?style=flat-square&logo=podman&logoColor=white)](https://podman.io)
 
