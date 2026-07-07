@@ -8,11 +8,19 @@
 **Build autonomous AI systems the Linux way.**
 
 
-[![Stars-Runtime-agent](https://img.shields.io/github/stars/buildaios/Runtime-agent?style=flat-square&color=FFB000&logo=github)](https://github.com/buildaios/Runtime-agent/stargazers)
-[![Stars-MCP-gateway](https://img.shields.io/github/stars/buildaios/MCP-gateway?style=flat-square&color=FFB000&logo=github)](https://github.com/buildaios/MCP-gateway/stargazers)
-[![Contributors-Runtime-agent](https://img.shields.io/github/contributors/buildaios/Runtime-agent?style=flat-square&color=0066CC)](https://github.com/buildaios/Runtime-agent/graphs/contributors)
-[![Contributors-MCP-gateway](https://img.shields.io/github/contributors/buildaios/MCP-gateway?style=flat-square&color=0066CC)](https://github.com/buildaios/MCP-gateway/graphs/contributors)
-[![Fedora AI SIG](https://img.shields.io/badge/Fedora-AI_SIG-3C6EB4?style=flat-square&logo=fedora&logoColor=white)](https://fedoraproject.org/wiki/SIGs/AI)
+[![Runtime Stars](https://img.shields.io/github/stars/buildaios/Runtime-agent?style=flat-square&logo=github&color=FFB000)](https://github.com/buildaios/Runtime-agent/stargazers)
+[![Gateway Stars](https://img.shields.io/github/stars/buildaios/MCP-gateway?style=flat-square&logo=github&color=FFB000)](https://github.com/buildaios/MCP-gateway/stargazers)
+
+[![Runtime Contributors](https://img.shields.io/github/contributors/buildaios/Runtime-agent?style=flat-square&color=0066CC)](https://github.com/buildaios/Runtime-agent/graphs/contributors)
+[![Gateway Contributors](https://img.shields.io/github/contributors/buildaios/MCP-gateway?style=flat-square&color=0066CC)](https://github.com/buildaios/MCP-gateway/graphs/contributors)
+
+[![License](https://img.shields.io/github/license/buildaios/Runtime-agent?style=flat-square)](LICENSE)
+
+[![Fedora AI SIG](https://img.shields.io/badge/Fedora-AI%20SIG-Community-294172?style=flat-square&logo=fedora&logoColor=white)](https://fedoraproject.org/wiki/SIGs/AI)
+
+[![Built with Podman](https://img.shields.io/badge/Container-Podman-892CA0?style=flat-square&logo=podman&logoColor=white)](https://podman.io)
+
+[![Powered by Fedora](https://img.shields.io/badge/Powered%20by-Fedora-51A2DA?style=flat-square&logo=fedora&logoColor=white)](https://getfedora.org)
 
 <p>
   <a href="#core-philosophy"><b>Philosophy</b></a> •
