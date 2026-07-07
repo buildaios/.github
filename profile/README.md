@@ -1,282 +1,189 @@
-markdown                                                                                                                                                            
-     <div align="center">                                                                                                                                                
-                                                                                                                                                                         
-     <!-- LOGO -->                                                                                                                                                       
-     <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/buildaios-logo.svg" alt="BuildAIOS Logo" width="160" height="160"                 
-     style="margin-bottom: 20px;"/>                                                                                                                                      
-     BuildAIOS                                                                                                                                                           
-     The Governed AI Runtime & Cognitive Control Plane for Enterprise Linux                                                                                              
-                                                                                                                                                                         
-     <p align="center">                                                                                                                                                  
-       <b>Borrow Infrastructure. Build Governance.</b>                                                                                                                   
-     </p>                                                                                                                                                                
-                                                                                                                                                                         
-     Release                                                                                                                                                             
-     License                                                                                                                                                             
-     Fedora Powered                                                                                                                                                      
-     Slack Community                                                                                                                                                     
-     </p>                                                                                                                                                                
-                                                                                                                                                                         
-     <p align="center">                                                                                                                                                  
-       <a href="#what-is-buildaios"><b>Explore</b></a> •                                                                                                                 
-       <a href="#architecture"><b>Architecture</b></a> •                                                                                                                 
-       <a href="#getting-started"><b>Quick Start</b></a> •                                                                                                               
-       <a href="#contributing"><b>Contribute</b></a> •                                                                                                                   
-       <a href="https://buildaios.dev"><b>Documentation</b></a>                                                                                                          
-     </p>                                                                                                                                                                
-                                                                                                                                                                         
-     <!-- HERO IMAGE PLACEHOLDER -->                                                                                                                                     
-     <a href="https://buildaios.dev">                                                                                                                                    
-       <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/hero-banner.png" alt="BuildAIOS Architecture Banner" width="100%"               
-     style="border-radius: 8px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); max-width: 900px; margin: 20px 0;"/>                                                          
-     </a>                                                                                                                                                                
-                                                                                                                                                                         
-     </div>                                                                                                                                                              
-     What is BuildAIOS?                                                                                                                                                  
-                                                                                                                                                                         
-     BuildAIOS is a governed AI runtime and cognitive control plane built natively on top of Fedora Linux. It is designed to host, orchestrate, and secure               
-     autonomous agent workflows with the same level of rigor, isolation, and auditability expected of enterprise operating systems.                                      
-                                                                                                                                                                         
-     Unlike traditional agent frameworks that reinvent the wheel, BuildAIOS treats AI agents as standard system processes. By leveraging battle-tested Linux             
-     primitives, it provides a stable, deterministic, and highly secure execution environment for LLM-driven workloads.                                                  
-                                                                                                                                                                         
-     With BuildAIOS, organizations can confidently transition from experimental scripts to production-grade cognitive infrastructure, backed by native OS security,      
-     robust human-in-the-loop approval gates, and complete execution auditability.                                                                                       
-     Why BuildAIOS?                                                                                                                                                      
-                                                                                                                                                                         
-     <table width="100%" style="border-collapse: collapse; border: none;">                                                                                               
-       <tr style="border: none; background: transparent;">                                                                                                               
-         <td width="50%" style="border: none; padding: 10px; vertical-align: top;">                                                                                      
-           <h3>🛡️ Governed Execution</h3>                                                                                                                                
-           <p>Fine-grained policy enforcement and isolation for every agent action. Prevent unauthorized API calls, file access, and model interactions before they      
-     happen.</p>                                                                                                                                                         
-         </td>                                                                                                                                                           
-         <td width="50%" style="border: none; padding: 10px; vertical-align: top;">                                                                                      
-           <h3>⚙️ Recoverable Runtime</h3>                                                                                                                               
-           <p>State-hydrated workflow execution. If an agent crashes or the host system restarts, BuildAIOS resumes execution precisely where it left off.</p>           
-         </td>                                                                                                                                                           
-       </tr>                                                                                                                                                             
-       <tr style="border: none; background: transparent;">                                                                                                               
-         <td width="50%" style="border: none; padding: 10px; vertical-align: top;">                                                                                      
-           <h3>🌐 MCP Gateway</h3>                                                                                                                                       
-           <p>A secure, governed gateway implementing the Model Context Protocol (MCP). Safely expose enterprise data sources and tools to local and remote              
-     models.</p>                                                                                                                                                         
-         </td>                                                                                                                                                           
-         <td width="50%" style="border: none; padding: 10px; vertical-align: top;">                                                                                      
-           <h3>📦 Environment Packs</h3>                                                                                                                                 
-           <p>Pre-configured, immutable OCI-compliant environments containing all dependencies, tools, and system libraries required by specialized agents.</p>          
-         </td>                                                                                                                                                           
-       </tr>                                                                                                                                                             
-       <tr style="border: none; background: transparent;">                                                                                                               
-         <td width="50%" style="border: none; padding: 10px; vertical-align: top;">                                                                                      
-           <h3>🐧 Linux Native</h3>                                                                                                                                      
-           <p>Zero-overhead integration with systemd, SELinux, and Podman. Your AI workloads run as native system services with standard process boundaries.</p>         
-         </td>                                                                                                                                                           
-         <td width="50%" style="border: none; padding: 10px; vertical-align: top;">                                                                                      
-           <h3>🔍 Auditable</h3>                                                                                                                                         
-           <p>Cryptographically signed audit logs of all agent decisions, tool invocations, and model inputs/outputs, streamed natively to journald.</p>                 
-         </td>                                                                                                                                                           
-       </tr>                                                                                                                                                             
-     </table>                                                                                                                                                            
-     Core Philosophy                                                                                                                                                     
-                                                                                                                                                                         
-     BuildAIOS operates on a simple, powerful architectural thesis: Borrow Infrastructure. Build Governance. Instead of writing custom scheduling, logging, and          
-     security layers from scratch, we map cognitive requirements directly to proven Linux primitives.                                                                    
-                                                                                                                                                                         
-     | Linux Provides |     | BuildAIOS Adds                                                 |                                                                           
-     |----------------|-----|----------------------------------------------------------------|                                                                           
-     | systemd        | ➔   | Workflow Runtime (Lifecycle & process management)              |                                                                           
-     | Podman         | ➔   | Agent Runtime (Secure, rootless container isolation)           |                                                                           
-     | SELinux        | ➔   | Trust Engine (Mandatory access control for models & tools)     |                                                                           
-     | Polkit         | ➔   | Human Approval (Privilege escalation & manual gates)           |                                                                           
-     | Git            | ➔   | Recovery Engine (State versioning & rollback capability)       |                                                                           
-     | Journald       | ➔   | Audit Layer (Structured, tamper-resistant system logs)         |                                                                           
-     | OCI Images     | ➔   | Environment Packs (Standardized, distributable agent runtimes) |                                                                           
-     | MCP            | ➔   | Gateway Governance (Secure, unified tool & context access)     |                                                                           
-                                                                                                                                                                         
-     <div align="center" style="margin: 20px 0;">                                                                                                                        
-       <p style="font-size: 1.25em; font-weight: bold; color: #0066CC;">Borrow Infrastructure. Build Governance.</p>                                                     
-     </div>                                                                                                                                                              
-     Architecture                                                                                                                                                        
-                                                                                                                                                                         
-     BuildAIOS is structured as a 7-layer cognitive operating stack, running on top of a hardened Fedora Linux base.                                                     
-                                                                                                                                                                         
-     <div align="center" style="margin: 30px 0;">                                                                                                                        
-       <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/architecture-diagram.svg" alt="BuildAIOS Layered Architecture" width="100%"     
-     style="max-width: 800px;"/>                                                                                                                                         
-     </div>                                                                                                                                                              
-                                                                                                                                                                         
-     ┌─────────────────────────────────────────────────────────┐                                                                                                         
-     │ L7: User Experience (CLI, Web Dashboard, Desktop App)   │                                                                                                         
-     ├─────────────────────────────────────────────────────────┤                                                                                                         
-     │ L6: Planning Layer (State Machines, ReAct, DAGs)        │                                                                                                         
-     ├─────────────────────────────────────────────────────────┤                                                                                                         
-     │ L5: Workflow Runtime (State Hydration & Recovery)       │                                                                                                         
-     ├─────────────────────────────────────────────────────────┤                                                                                                         
-     │ L4: Scheduler (Resource Allocation & Queue Management)  │                                                                                                         
-     ├─────────────────────────────────────────────────────────┤                                                                                                         
-     │ L3: MCP Gateway (Context & Tool Governance)             │                                                                                                         
-     ├─────────────────────────────────────────────────────────┤                                                                                                         
-     │ L2: Agent Runtime (Podman Isolation & SELinux Policies) │                                                                                                         
-     ├─────────────────────────────────────────────────────────┤                                                                                                         
-     │ L1: Fedora Linux (Host OS & System Primitives)          │                                                                                                         
-     └─────────────────────────────────────────────────────────┘                                                                                                         
-                                                                                                                                                                         
-     Core Components                                                                                                                                                     
-                                                                                                                                                                         
-     <table width="100%" style="border-collapse: collapse;">                                                                                                             
-       <thead>                                                                                                                                                           
-         <tr style="background-color: rgba(0, 102, 204, 0.05);">                                                                                                         
-           <th width="25%">Component</th>                                                                                                                                
-           <th width="55%">Purpose & Key Responsibilities</th>                                                                                                           
-           <th width="20%">Status</th>                                                                                                                                   
-         </tr>                                                                                                                                                           
-       </thead>                                                                                                                                                          
-       <tbody>                                                                                                                                                           
-         <tr>                                                                                                                                                            
-           <td><b>Runtime</b></td>                                                                                                                                       
-           <td>Manages agent execution lifecycles, maps workflows to systemd services, and coordinates containerized execution via rootless Podman.</td>                 
-           <td><span style="color: #28a745;">● Active</span></td>                                                                                                        
-         </tr>                                                                                                                                                           
-         <tr>                                                                                                                                                            
-           <td><b>Gateway</b></td>                                                                                                                                       
-           <td>A secure implementation of the Model Context Protocol (MCP) that acts as a reverse proxy and policy filter for LLMs accessing system tools.</td>          
-           <td><span style="color: #28a745;">● Active</span></td>                                                                                                        
-         </tr>                                                                                                                                                           
-         <tr>                                                                                                                                                            
-           <td><b>Scheduler</b></td>                                                                                                                                     
-           <td>Handles queue management, resource limits, and prioritizes agent execution threads based on host system capacity.</td>                                    
-           <td><span style="color: #fd7e14;">◑ Beta</span></td>                                                                                                          
-         </tr>                                                                                                                                                           
-         <tr>                                                                                                                                                            
-           <td><b>Trust Engine</b></td>                                                                                                                                  
-           <td>Enforces SELinux-style security profiles on LLM tool outputs and manages human-in-the-loop escalation gates using Polkit.</td>                            
-           <td><span style="color: #fd7e14;">◑ Beta</span></td>                                                                                                          
-         </tr>                                                                                                                                                           
-         <tr>                                                                                                                                                            
-           <td><b>Memory</b></td>                                                                                                                                        
-           <td>Provides high-performance, short-term and episodic memory structures, backed by transactional local storage and Git-based snapshots.</td>                 
-           <td><span style="color: #fd7e14;">◑ Beta</span></td>                                                                                                          
-         </tr>                                                                                                                                                           
-         <tr>                                                                                                                                                            
-           <td><b>Environment Packs</b></td>                                                                                                                             
-           <td>OCI-compliant base images pre-configured with specialized toolchains, runtimes, and system configurations for agent execution.</td>                       
-           <td><span style="color: #28a745;">● Active</span></td>                                                                                                        
-         </tr>                                                                                                                                                           
-         <tr>                                                                                                                                                            
-           <td><b>Desktop Integration</b></td>                                                                                                                           
-           <td>A lightweight system tray application and GUI dashboard for managing local BuildAIOS instances, viewing logs, and approving actions.</td>                 
-           <td><span style="color: #6c757d;">○ Planning</span></td>                                                                                                      
-         </tr>                                                                                                                                                           
-       </tbody>                                                                                                                                                          
-     </table>                                                                                                                                                            
-     Repository Overview                                                                                                                                                 
-                                                                                                                                                                         
-     Our codebase is modularized across dedicated repositories. Explore the core components below:                                                                       
-                                                                                                                                                                         
-     *   runtime: The core engine managing agent lifecycles, workflow execution, and systemd/Podman bindings.                                                            
-     *   gateway: The secure Model Context Protocol (MCP) proxy and policy enforcement layer.                                                                            
-     *   docs: Technical documentation, architecture decision records (ADRs), and guides.                                                                                
-     *   website: The source for our public landing page and documentation portal.                                                                                       
-     *   .github: Global organization profiles, issue templates, and CI/CD workflows.                                                                                    
-     Engineering Organization                                                                                                                                            
-                                                                                                                                                                         
-     BuildAIOS is governed by specialized engineering SIGs (Special Interest Groups).                                                                                    
-                                                                                                                                                                         
-     <table width="100%" style="border-collapse: collapse; border: none;">                                                                                               
-       <tr style="border: none; background: transparent;">                                                                                                               
-         <td width="50%" style="border: none; padding: 10px; vertical-align: top;">                                                                                      
-           <h4>⚙️ Runtime & Orchestration</h4>                                                                                                                           
-           <ul>                                                                                                                                                          
-             <li><b>Mission:</b> Core execution stability and Linux integration.</li>                                                                                    
-             <li><b>Lead:</b> <a href="https://github.com/orgs/buildaios/people">@buildaios-core-maintainers</a></li>                                                    
-             <li><b>Repository:</b> <code>runtime</code></li>                                                                                                            
-           </ul>                                                                                                                                                         
-         </td>                                                                                                                                                           
-         <td width="50%" style="border: none; padding: 10px; vertical-align: top;">                                                                                      
-           <h4>🌐 Gateway & Integrations</h4>                                                                                                                            
-           <ul>                                                                                                                                                          
-             <li><b>Mission:</b> MCP governance, tool integrations, and protocol compliance.</li>                                                                        
-             <li><b>Lead:</b> <a href="https://github.com/orgs/buildaios/people">@buildaios-gateway-leads</a></li>                                                       
-             <li><b>Repository:</b> <code>gateway</code></li>                                                                                                            
-           </ul>                                                                                                                                                         
-         </td>                                                                                                                                                           
-       </tr>                                                                                                                                                             
-       <tr style="border: none; background: transparent;">                                                                                                               
-         <td width="50%" style="border: none; padding: 10px; vertical-align: top;">                                                                                      
-           <h4>🛡️ Security & Governance</h4>                                                                                                                             
-           <ul>                                                                                                                                                          
-             <li><b>Mission:</b> Trust Engine, SELinux policies, and Polkit approvals.</li>                                                                              
-             <li><b>Lead:</b> <a href="https://github.com/orgs/buildaios/people">@buildaios-security-sig</a></li>                                                        
-             <li><b>Repository:</b> <code>runtime</code> / <code>gateway</code></li>                                                                                     
-           </ul>                                                                                                                                                         
-         </td>                                                                                                                                                           
-         <td width="50%" style="border: none; padding: 10px; vertical-align: top;">                                                                                      
-           <h4>🚀 Engineering Operations</h4>                                                                                                                            
-           <ul>                                                                                                                                                          
-             <li><b>Mission:</b> CI/CD pipelines, Fedora packaging, and OCI Environment Packs.</li>                                                                      
-             <li><b>Lead:</b> <a href="https://github.com/orgs/buildaios/people">@buildaios-ops</a></li>                                                                 
-             <li><b>Repository:</b> <code>.github</code> / <code>infra</code></li>                                                                                       
-           </ul>                                                                                                                                                         
-         </td>                                                                                                                                                           
-       </tr>                                                                                                                                                             
-     </table>                                                                                                                                                            
-     Current Development Status                                                                                                                                          
-                                                                                                                                                                         
-     We track our progress towards production readiness transparently. Key modules currently in development:                                                             
-                                                                                                                                                                         
-     text                                                                                                                                                                
-     Runtime          ████████████████████████░░░░░░░░  [ 75% - Active Beta ]                                                                                            
-     Gateway          ████████████████████░░░░░░░░░░░░  [ 60% - Active Beta ]                                                                                            
-     Scheduler        ████████████░░░░░░░░░░░░░░░░░░░░  [ 40% - Alpha ]                                                                                                  
-     Desktop          ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  [ 15% - Planning ]                                                                                               
-     Marketplace      ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  [  5% - Conceptual ]                                                                                             
-                                                                                                                                                                         
-     Roadmap                                                                                                                                                             
-                                                                                                                                                                         
-       v1.0 (Q3 2024) - Foundations                                                                                                                                      
-       ├── Stable systemd-backed runtime engine                                                                                                                          
-       ├── Secure local MCP tool execution                                                                                                                               
-       └── Rootless Podman agent isolation                                                                                                                               
-       │                                                                                                                                                                 
-       v2.0 (Q1 2025) - Enterprise Scale                                                                                                                                 
-       ├── Distributed DAG workflow scheduler                                                                                                                            
-       ├── Hardware-backed Polkit approval gates                                                                                                                         
-       └── Cryptographically signed Journald audit logs                                                                                                                  
-       │                                                                                                                                                                 
-       └── v3.0 (Q4 2025) - Edge & Desktop                                                                                                                               
-           ├── Lightweight local Desktop UI                                                                                                                              
-           ├── Decentralized Agent Marketplace                                                                                                                           
-           └── Multi-node cluster orchestration                                                                                                                          
-                                                                                                                                                                         
-     Getting Started                                                                                                                                                     
-                                                                                                                                                                         
-     Ready to experience governed AI execution? Get started with our guides:                                                                                             
-                                                                                                                                                                         
-     *   Quick Start Guide — Spin up your first governed agent in under 5 minutes.                                                                                       
-     *   Architecture Deep Dive — Learn how we map cognitive tasks to Fedora Linux primitives.                                                                           
-     *   MCP Gateway Setup — Connect your local LLMs to system tools securely.                                                                                           
-     *   Creating Environment Packs — Build custom, isolated runtime environments for your agents.                                                                       
-     Contributing                                                                                                                                                        
-                                                                                                                                                                         
-     We welcome thinkers, system architects, and developers to help shape the future of cognitive operating systems.                                                     
-                                                                                                                                                                         
-     *   Good First Issues: Looking for an easy entry point? Check out our Good First Issues.                                                                            
-     *   Architecture Discussions: Join active design proposals and RFCs in our Discussions Portal.                                                                      
-     *   Bug Reports: Found an issue? Help us improve by filing a Bug Report.                                                                                            
-     Community                                                                                                                                                           
-                                                                                                                                                                         
-     Stay connected, ask questions, and share your projects with the BuildAIOS community:                                                                                
-                                                                                                                                                                         
-     *   GitHub Discussions — Technical support, feature requests, and RFCs.                                                                                             
-     *   Discord Community — Real-time chat with core maintainers and developers.                                                                                        
-     *   Official Website — Project news, downloads, and official documentation.                                                                                         
-                                                                                                                                                                         
-     <div align="center">                                                                                                                                                
-       <p>                                                                                                                                                               
-         <b>BuildAIOS is a community-driven project built natively on Fedora Linux.</b><br>                                                                              
-         Released under the <a href="LICENSE">MIT License</a>.                                                                                                           
-       </p>                                                                                                                                                              
-       <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/fedora-logo.svg" alt="Fedora Logo" width="40" height="40"                       
-     style="margin-top: 10px;"/>                                                                                                                                         
-     </div>                                   
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/buildaios-logo.svg" alt="BuildAIOS Logo" width="140" style="margin-bottom: 16px;"/>
+
+# BuildAIOS
+
+**Build autonomous AI systems the Linux way.**
+
+[![Stars](https://img.shields.io/github/stars/buildaios/runtime?style=flat-square&color=FFB000&logo=github)](https://github.com/buildaios/runtime/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/buildaios/runtime?style=flat-square&color=0066CC)](https://github.com/buildaios/runtime/graphs/contributors)
+[![Fedora AI SIG](https://img.shields.io/badge/Fedora-AI_SIG-3C6EB4?style=flat-square&logo=fedora&logoColor=white)](https://fedoraproject.org/wiki/SIGs/AI)
+[![DevConf](https://img.shields.io/badge/Featured_At-DevConf-E72C29?style=flat-square)](https://devconf.info)
+[![Discord](https://img.shields.io/badge/Discord-Join_Us-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/buildaios)
+
+<p>
+  <a href="#core-philosophy"><b>Philosophy</b></a> •
+  <a href="#why-buildaios"><b>Why BuildAIOS?</b></a> •
+  <a href="#repositories"><b>Repositories</b></a> •
+  <a href="#getting-started"><b>Quick Start</b></a> •
+  <a href="https://buildaios.dev"><b>Documentation</b></a>
+</p>
+
+<!-- ARCHITECTURE / HERO BANNER -->
+<a href="https://buildaios.dev">
+  <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/hero-banner.png" alt="BuildAIOS Infrastructure Banner" width="100%" style="max-width: 850px; margin: 24px 0; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"/>
+</a>
+
+</div>
+
+## What is BuildAIOS?
+
+**BuildAIOS doesn't replace Linux. It teaches Linux how to run AI agents.**
+
+It is a governed AI runtime and control plane that turns Fedora Linux into a secure orchestration environment for autonomous workflows. 
+
+Instead of reinventing scheduling, logging, and security in user-space Python or Node.js frameworks, BuildAIOS maps AI agent requirements directly to native OS primitives. By combining `systemd`, `Podman`, `SELinux`, and the Model Context Protocol (MCP) under a unified control plane, you get the flexibility of modern AI agents with the deterministic, robust execution of native system processes.
+
+## Why BuildAIOS?
+
+Why use an OS-level runtime instead of an application-layer framework like LangGraph, OpenHands, or Claude Code?
+
+| Traditional Agent Framework | BuildAIOS |
+| :--- | :--- |
+| **User-space runtime** | **Native Linux runtime** (`systemd`-managed) |
+| **Custom application sandbox** | **Strict kernel isolation** (`SELinux` + `Podman`) |
+| **Custom while-loop scheduler** | **Battle-tested OS scheduler** (`systemd` timers & targets) |
+| **Proprietary framework logs** | **Tamper-resistant system logs** (`journald`) |
+| **Manual script orchestration**| **Policy-driven control plane** (`Polkit` governance) |
+
+---
+
+## Core Philosophy
+
+Our architectural thesis is simple: **Borrow Infrastructure. Build Governance.** 
+
+| Linux Primitives | | BuildAIOS Capabilities |
+| :--- | :---: | :--- |
+| **`systemd`** | ➔ | **Workflow Runtime** (Lifecycle & process management) |
+| **`Podman`** | ➔ | **Agent Runtime** (Secure, rootless container isolation) |
+| **`SELinux`** | ➔ | **Trust Engine** (Mandatory access control for models & tools) |
+| **`Polkit`** | ➔ | **Human Approval** (Privilege escalation & manual gates) |
+| **`Git`** | ➔ | **Recovery Engine** (State versioning & rollback capability) |
+| **`Journald`** | ➔ | **Audit Layer** (Structured, tamper-resistant system logs) |
+| **`OCI Images`** | ➔ | **Environment Packs** (Standardized, distributable agent runtimes) |
+| **`MCP`** | ➔ | **Gateway Governance** (Secure, unified tool & context access) |
+
+---
+
+## The BuildAIOS Experience
+
+<table width="100%" style="border: none; border-collapse: collapse;">
+  <tr>
+    <td width="33%" align="center" style="border: none; padding: 10px;">
+      <b>CLI Control Plane</b><br>
+      <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/preview-cli.png" alt="BuildAIOS CLI" width="100%" style="border-radius: 6px; margin-top: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+    </td>
+    <td width="33%" align="center" style="border: none; padding: 10px;">
+      <b>MCP Gateway Dashboard</b><br>
+      <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/preview-gateway.png" alt="BuildAIOS Gateway" width="100%" style="border-radius: 6px; margin-top: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+    </td>
+    <td width="33%" align="center" style="border: none; padding: 10px;">
+      <b>Desktop Approval UI</b><br>
+      <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/preview-desktop.png" alt="BuildAIOS Desktop UI" width="100%" style="border-radius: 6px; margin-top: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Core Features
+
+<table width="100%" style="border-collapse: collapse; border: none;">
+  <tr style="border: none; background: transparent;">
+    <td width="50%" style="border: none; padding: 16px; vertical-align: top;">
+      <h3>🛡️ Governed Execution</h3>
+      <p>Prevent unauthorized API calls, file access, and model interactions before they happen via strict SELinux-style boundary policies and Polkit manual approval gates.</p>
+    </td>
+    <td width="50%" style="border: none; padding: 16px; vertical-align: top;">
+      <h3>⚙️ Recoverable Runtime</h3>
+      <p>If an agent is OOM-killed or the host system restarts, BuildAIOS resumes execution precisely where it left off using state-hydrated workflows and Git-backed memory.</p>
+    </td>
+  </tr>
+  <tr style="border: none; background: transparent;">
+    <td width="50%" style="border: none; padding: 16px; vertical-align: top;">
+      <h3>🌐 Native MCP Gateway</h3>
+      <p>Safely expose enterprise data sources, local files, and web APIs to both local and remote models through a secure Model Context Protocol proxy.</p>
+    </td>
+    <td width="50%" style="border: none; padding: 16px; vertical-align: top;">
+      <h3>📦 Environment Packs</h3>
+      <p>Run specialized agents inside immutable OCI-compliant Podman containers, completely isolating their dependencies, languages, and toolchains.</p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## System Architecture
+
+<div align="center" style="margin: 30px 0;">
+  <a href="https://buildaios.dev/docs/architecture">
+    <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/architecture-diagram.svg" alt="BuildAIOS Layered Architecture" width="100%" style="max-width: 850px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"/>
+  </a>
+</div>
+
+*For a detailed breakdown of the 7-layer OS routing stack, read the [Architecture Design Records](https://buildaios.dev/docs/architecture).*
+
+---
+
+## Current Focus
+
+We build in the open. Here is what the core team is currently focused on:
+
+```text
+✓ Runtime engine & systemd scheduling
+✓ MCP Gateway & core tool routing
+• Environment Packs (OCI isolation)
+• Memory Layer (Git-backed state)
+• Desktop GUI (Polkit agent)
+```
+
+---
+
+## Repositories
+
+BuildAIOS is modular by design. Our core systems are split into the following repositories:
+
+| Repository | Purpose | Status |
+| :--- | :--- | :---: |
+| [**`runtime`**](https://github.com/buildaios/runtime) | Core agent execution, `systemd` process mapping, and Podman | 🟢 Active |
+| [**`gateway`**](https://github.com/buildaios/gateway) | Secure MCP proxy, rate limiting, and policy enforcement layer | 🟢 Active |
+| [**`docs`**](https://github.com/buildaios/docs) | Architecture Decision Records (ADRs), guides, and topology | 🟢 Active |
+| [**`website`**](https://github.com/buildaios/website) | Public landing page and documentation portal front-end | 🟡 Beta |
+| [**`.github`**](https://github.com/buildaios/.github) | Global organization profiles, issue templates, and CI/CD | 🟢 Active |
+
+---
+
+## 🗺️ Roadmap
+
+* **Phase 1: Foundation** — Stable `systemd`-backed runtime engine, local MCP tool routing, and rootless Podman agent isolation.
+* **Phase 2: Core Runtime** — Distributed DAG workflow scheduler, `Polkit` human-in-the-loop approval gates, and signed `journald` audit logs.
+* **Phase 3: Desktop Integration** — Lightweight local UI management dashboard, system tray monitoring, and guided agent bootstrapping.
+* **Phase 4: Distributed & Edge** — Decentralized Environment Pack marketplace and multi-node cluster orchestration.
+
+---
+
+## Getting Started
+
+Ready to run governed agents on Linux?
+
+* [**Quick Start Guide**](https://buildaios.dev/docs/getting-started) — Spin up your first governed agent in under 5 minutes.
+* [**MCP Gateway Setup**](https://buildaios.dev/docs/mcp) — Connect your local LLMs to system tools securely.
+* [**Building Environment Packs**](https://buildaios.dev/docs/packs) — Create isolated runtime environments for specialized workloads.
+
+---
+
+## Contribute
+
+We are building the open standard for AI orchestration on Linux, and we welcome contributions from system architects, OS engineers, and AI developers.
+
+* **[Good First Issues](https://github.com/buildaios/runtime/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)** — Find an easy entry point into the codebase.
+* **[Discussions & RFCs](https://github.com/orgs/buildaios/discussions)** — Join active design proposals and technical debates.
+* **[Discord](https://discord.gg/buildaios)** — Chat with the core maintainers.
+
+---
+
+<p align="center">
+  <b>Built natively on Fedora Linux. Released under the MIT License.</b><br>
+  <img src="https://raw.githubusercontent.com/buildaios/.github/main/profile/assets/fedora-logo-small.svg" alt="Fedora OS" width="24" style="margin-top: 12px;"/>
+</p>
